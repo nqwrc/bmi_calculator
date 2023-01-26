@@ -5,7 +5,7 @@ function calculateBMI() {
   var height = document.getElementById("height").value;
   var result = weight / (height / 100 * height / 100);
   var status;
-  
+
   if (result < 18.5) {
     status = "Underweight";
   } else if (result >= 18.5 && result < 25) {
@@ -15,7 +15,7 @@ function calculateBMI() {
   } else {
     status = "Obese";
   }
-  
+
   document.getElementById("result").innerHTML = result.toFixed(2);
   document.getElementById("status").innerHTML = status;
   document.getElementById("result").style.visibility = "visible";
