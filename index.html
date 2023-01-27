@@ -9,9 +9,6 @@
 <body>
   <h1>BMI Calculator</h1>
   <form>
-    <label for="age">Age:</label>
-    <input type="text" id="age" name="age">
-    <br>
     <label for="weight">Weight (kg):</label>
     <input type="text" id="weight" name="weight">
     <br>
@@ -21,8 +18,12 @@
     <button type="button" onclick="calculateBMI()">Calculate BMI</button>
   </form>
   <br>
-  <p>Your BMI is: <span id="result"></span></p>
-  <p>Your BMI status is: <span id="status"></span></p>
+  <p id="result-label" style="visibility:hidden;">Your BMI is: <span id="result"></span></p>
+  <p></p>
+  <p id="status-label" style="visibility:hidden;">Your BMI status is: <span id="status"></span></p>
+  <p></p>
+  <p id="overweight-label" style="visibility:hidden;"></p>
+  <p id="kg-needed-label" style="visibility:hidden;"></p>
   <script src="bmi.js"></script>
 </body>
 
